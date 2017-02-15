@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/FunDodo3.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.FunDodo3.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'FunDodo3.png'));
 });
 
 
