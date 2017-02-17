@@ -6,13 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 
-//Getting HTML file
+//HTML Getting HTML file
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
-//Getting style.css file
+//CSS Getting style.css file
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
