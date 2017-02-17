@@ -18,16 +18,23 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
-//Getting Dipanjan Das display image
-app.get('/ui/FunDodo3.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'FunDodo3.png'));
+//JAVASCRIPT Getting main.js
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-
-//Getting bottom background image
-app.get('/ui/Backroundcity1.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Backroundcity1.png'));
-});
+        //IMAGES//
+        
+        //Getting Dipanjan Das display image
+        app.get('/ui/FunDodo3.png', function (req, res) {
+          res.sendFile(path.join(__dirname, 'ui', 'FunDodo3.png'));
+        });
+        
+        
+        //Getting bottom background image
+        app.get('/ui/Backroundcity1.png', function (req, res) {
+          res.sendFile(path.join(__dirname, 'ui', 'Backroundcity1.png'));
+        });
 
 
 //Defing the port the app will listen to
